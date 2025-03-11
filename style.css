@@ -1,0 +1,171 @@
+.full{
+    background: linear-gradient(to right, #e6f7ff, #b3d9ff, #4a90e2, #003366);
+    width: 100vw;
+    height: 100vh;
+    top:0%;
+    bottom:0%;
+    margin: 0%;
+    padding:0%;
+    display:flex;
+}
+.me{
+    background-color: transparent;
+    position:absolute;
+    top:15%;
+    left:12%;
+    width: 250px;
+    height:550px;
+}
+.rocksign{
+    position: absolute;
+    left: 21%;
+    top:  10%;
+    width: 150px;
+    height: 160px;
+    border-radius: 100%;
+    background-image: url("rock.png");
+    background-size: 80%; 
+    background-position: center;
+    background-color: transparent;
+    border-color: red;
+    border-width:5px;
+    background-repeat: no-repeat;
+}
+.papersign{
+    position: absolute;
+    left: 21%;
+    top:  45%;
+    width: 150px;
+    height: 160px;
+    border-radius: 100%;
+    background-image: url("paper.png");
+    background-size: 80%; 
+    background-position: center;
+    background-color: transparent;
+    border-color: yellow;
+    border-width:5px;
+    background-repeat: no-repeat;
+}
+.scissorsign{
+    position: absolute;
+    left: 21%;
+    top:80%;
+    width: 150px;
+    height: 160px;
+    border-radius: 100%;
+    background-image: url("scissor.png");
+    background-size: 80%; 
+    background-position: center;
+    background-color: transparent;
+    border-color: green;
+    border-width:5px;
+    background-repeat: no-repeat;
+}
+.playerName{
+    position: absolute;
+    left: 15%;
+    top:3%;
+    height: 3%;
+    width: 70%;
+    background-color: transparent;
+    border-style:solid;
+    border-color: black;
+    text-align: center;
+}
+.heading{
+    position: absolute;
+    left: 30%;
+    font-size:250%;
+}
+.computer{
+    height:75%;
+    width:25%;
+    position: absolute;
+    left: 65%;
+    top:17%;
+    background-color: transparent;
+}
+.chead{
+    font-size: 200%;
+    position: absolute;
+    left: 11%;
+    top: 20%;
+}
+.comp{
+    background-color: transparent;
+    width:150px;
+    height:160px;
+    border-radius: 100%;
+    position:absolute;
+    top:37%;
+    left: 13%;
+    border:solid purple 5px;
+}
+#computerimg{
+    width: 80%;
+    position: absolute;
+    left:10%;
+    top:15%;
+}
+.scoreboard{
+    border:1px solid black;
+    position:absolute;
+    height:125px;
+    width:300px;
+    left:39%;
+    top:15%;
+
+}
+#playerScore{
+    background-color: transparent;
+    position: absolute;
+    top:23%;
+    left:4%;
+    width:40%;
+    height:64%;
+    border: none;
+    text-align: center;
+    font-size: 330%;
+}
+#computerScore{
+    background-color: transparent;
+    position: absolute;
+    top:23%;
+    left:54%;
+    width:40%;
+    height:64%;
+    text-align: center;
+    border: none;
+    font-size: 330%;
+}
+.result{
+    width: 28%;
+    height: 25%;
+    border: 1px solid black;
+    position:absolute;
+    left:35%;
+    top: 45%;
+    border:none;
+}
+#showResult{
+    background-color: transparent;
+    width: 98%;
+    height:97%;
+    position:absolute;
+    left:4%;
+    border: none;
+    text-align: center;
+    font-size: 330%;
+    font-family: garamond;
+}
+.reset{
+    width:100px;
+    height:30px;
+    position:absolute;
+    left:71%;
+    top:77%;
+    border-radius:50px;
+    border:none;
+    background-color: red;
+    
+}
