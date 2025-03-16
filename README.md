@@ -9,3 +9,4 @@ Features:
 User vs. Computer gameplay
 Randomized computer choices
 Score tracking system
+Added an AutoPlay button that allows the game to play automatically at intervals.
