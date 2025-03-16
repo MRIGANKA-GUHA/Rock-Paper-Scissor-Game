@@ -169,3 +169,13 @@
     background-color: red;
     
 }
+.autoPlay{
+    width:100px;
+    height:30px;
+    position:absolute;
+    left:79%;
+    top:77%;
+    border-radius:50px;
+    border:none;
+    background-color: yellow;
+}

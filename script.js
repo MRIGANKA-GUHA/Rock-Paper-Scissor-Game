@@ -1,3 +1,5 @@
+//Logic for the Game...
+
 let meScore=0;
 let compScore=0;
 function rock(){
@@ -63,10 +65,16 @@ function scissor(){
     }
     document.getElementById('showResult').value=`${res}`;
 };
+
+// Showing the Name...
+
 function changeName(){
     let value=document.getElementById('playerName').value;
     document.getElementById('PLAYER').textContent=`${value}`;
 }
+
+// Reset Function...
+
 function reset(){
     document.getElementById('showResult').value=''
     document.getElementById('playerScore').value='0'
@@ -76,3 +84,36 @@ function reset(){
     document.getElementById('computerimg').src=''
 
 };
+
+// Autoplay Func starting...
+
+function getRandomCoice(){
+    const choices=["rock","paper","scissor"];
+    return choices[Math.floor(Math.random *choices.length)];
+}
+function play(choices){
+    if (choices==="rock")
+    {
+        rock();
+    }
+    else if(choices==="scissor")
+    {
+        scissor();
+    }
+    else paper();
+}
+let isAutoPlaying= false;
+let intervalId;
+function autoPlay(){
+    if (isAutoPlaying==false){                     
+    intervalId=setInterval(function() {
+        let playerChoice=getRandomCoice();
+        play(playerChoice);
+    }, 1000);
+    isAutoPlaying=true;}
+    else
+    {
+        clearInterval(intervalId);              //Stop Autoplay
+        isAutoPlaying=false;
+    }
+}
