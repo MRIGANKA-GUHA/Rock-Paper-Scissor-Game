@@ -7,17 +7,17 @@ function rock(){
     let res='';
     if (computerChoice==0 || computerChoice<1/3){
         res="Tie";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/rock.png';
+        document.getElementById('computerimg').src='/Project Images/rock.png';
     }
     else if(computerChoice==1/3 || computerChoice<2/3){
         res="Computer Wins";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/paper.png';
+        document.getElementById('computerimg').src='/Project Images/paper.png';
         compScore+=+1;
         document.getElementById('computerScore').value=`${compScore}`;
     }
     else{
         res="Player Wins";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/scissor.png';
+        document.getElementById('computerimg').src='/Project Images/scissor.png';
         meScore+=+1;
         document.getElementById('playerScore').value=`${meScore}`;
     }
@@ -28,17 +28,17 @@ function paper(){
     let res='';
     if (computerChoice==0 || computerChoice<1/3){
         res="Player Wins";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/rock.png';
+        document.getElementById('computerimg').src='/Project Images/rock.png';
         meScore+=+1;
         document.getElementById('playerScore').value=`${meScore}`;
     }
     else if(computerChoice==1/3 || computerChoice<2/3){
         res="Tie";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/paper.png';
+        document.getElementById('computerimg').src='/Project Images/paper.png';
     }
     else{
         res="Computer Wins";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/scissor.png';
+        document.getElementById('computerimg').src='/Project Images/scissor.png';
         compScore+=+1;
         document.getElementById('computerScore').value=`${compScore}`;
     }
@@ -49,19 +49,19 @@ function scissor(){
     let res='';
     if (computerChoice==0 || computerChoice<1/3){
         res="Computer Wins";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/rock.png';
+        document.getElementById('computerimg').src='/Project Images/rock.png';
         compScore+=+1;
         document.getElementById('computerScore').value=`${compScore}`;
     }
     else if(computerChoice==1/3 || computerChoice<2/3){
         res="Player Wins";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/paper.png';
+        document.getElementById('computerimg').src='/Project Images/paper.png';
         meScore+=+1;
         document.getElementById('playerScore').value=`${meScore}`;
     }
     else{
         res="Tie";
-        document.getElementById('computerimg').src='/Rock-Paper-Scissor-Game/Project Images/scissor.png';
+        document.getElementById('computerimg').src='/Project Images/scissor.png';
     }
     document.getElementById('showResult').value=`${res}`;
 };
